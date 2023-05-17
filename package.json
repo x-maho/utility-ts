@@ -1,0 +1,38 @@
+{
+  "name": "@xmaho/utility-ts",
+  "homepage": "https://github.com/x-maho/utility-ts",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "fp-ts": "^2.9.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "cspell": "^6.31.1",
+    "docs-ts": "^0.8.0",
+    "eslint": "^8.40.0",
+    "fast-check": "^3.8.2",
+    "fp-ts": "^2.15.0",
+    "jest": "^29.5.0",
+    "markdown-magic": "^2.6.1",
+    "prettier": "^2.8.8",
+    "prettier-plugin-jsdoc": "^0.4.2",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "build:watch": "tsc -w -p tsconfig.build.json",
+    "prepublish": "npm run build",
+    "pretty": "npm run prettier --check .",
+    "lint": "npm run eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0",
+    "test": "npm run jest",
+    "test:watch": "npm run jest --watch",
+    "docs": "npm run docs-ts",
+    "spell": "yarn cspell '**/*.*'",
+    "md": "npm run markdown"
+  }
+}
