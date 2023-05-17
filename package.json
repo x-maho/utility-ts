@@ -26,13 +26,13 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "build:watch": "tsc -w -p tsconfig.build.json",
-    "prepublish": "npm run build",
-    "pretty": "npm run prettier --check .",
-    "lint": "npm run eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0",
-    "test": "npm run jest",
-    "test:watch": "npm run jest --watch",
-    "docs": "npm run docs-ts",
+    "prepublish": "pnpm build",
+    "pretty": "pnpm prettier --check .",
+    "lint": "pnpm eslint . --ext .js,.jsx,.ts,.tsx --max-warnings 0",
+    "test": "pnpm jest",
+    "test:watch": "pnpm jest --watch",
+    "docs": "pnpm docs-ts",
     "spell": "yarn cspell '**/*.*'",
-    "md": "npm run markdown"
+    "md": "pnpm markdown"
   }
 }
