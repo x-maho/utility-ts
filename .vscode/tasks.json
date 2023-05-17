@@ -7,9 +7,9 @@
         "runOn": "folderOpen"
       },
       "type": "shell",
-      "command": "npm",
+      "command": "pnpm",
       "isBackground": true,
-      "args": ["run", "build:watch"],
+      "args": ["build:watch"],
       "group": "build",
       "presentation": {
         "reveal": "always",
@@ -24,9 +24,9 @@
         "runOn": "folderOpen"
       },
       "type": "shell",
-      "command": "npm",
+      "command": "pnpm",
       "isBackground": true,
-      "args": ["run", "test:watch"],
+      "args": ["test:watch"],
       "group": "none",
       "presentation": {
         "reveal": "always",
