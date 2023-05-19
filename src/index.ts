@@ -1,3 +1,4 @@
+export * as Either from './Either'
 export * as TaskEither from './TaskEither'
 export * as convert from './convert'
 export * as copy from './copy'
