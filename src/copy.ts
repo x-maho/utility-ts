@@ -1,6 +1,7 @@
 /** @since 0.0.3 */
 
-import E, { Either } from 'fp-ts/Either'
+import * as E from 'fp-ts/Either'
+import { Either } from 'fp-ts/Either'
 import * as Json from 'fp-ts/Json'
 import { pipe } from 'fp-ts/function'
 
