@@ -2,7 +2,7 @@
 
 import * as O from 'fp-ts/Option'
 import { Option } from 'fp-ts/Option'
-import { pipe } from 'fp-ts/lib/function'
+import { pipe } from 'fp-ts/function'
 
 // -----------------------------------------------------------------------------
 // convert
