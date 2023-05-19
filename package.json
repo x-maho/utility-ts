@@ -2,7 +2,7 @@
   "name": "@xmaho/utility-ts",
   "type": "module",
   "homepage": "https://github.com/x-maho/utility-ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "license": "MIT",
   "peerDependencies": {
