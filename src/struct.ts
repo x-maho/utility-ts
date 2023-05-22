@@ -15,6 +15,5 @@
  */
 export const lookup =
   <K extends string | number | symbol>(path: K) =>
-  <A>(obj: { [P in K]: A }): A => {
-    return obj[path]
-  }
+  <A>(obj: { [P in K]: A }): A =>
+    obj[path]
