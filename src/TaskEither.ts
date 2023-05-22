@@ -18,6 +18,4 @@ import * as TE from 'fp-ts/TaskEither'
 export const liftPromise =
   <E>(onRejected: (e: unknown) => E) =>
   <A, Args extends unknown[]>(f: (...args: Args) => Promise<A>) =>
-  (...args: Args) => {
-    return TE.tryCatch(() => f(...args), onRejected)
-  }
+    TE.tryCatchK(f, onRejected)

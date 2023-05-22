@@ -18,6 +18,4 @@ import * as E from 'fp-ts/Either'
 export const liftThrowable =
   <E>(onThrow: (e: unknown) => E) =>
   <A, Args extends unknown[]>(f: (...args: Args) => A) =>
-  (...args: Args) => {
-    return E.tryCatch(() => f(...args), onThrow)
-  }
+    E.tryCatchK(f, onThrow)
