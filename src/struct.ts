@@ -10,7 +10,7 @@
  * @since 0.0.1
  * @category struct
  * @example
- *   import struct from '@xmaho&#x2F;utility-ts'
+ *   import { struct } from '@xmaho/utility-ts'
  *   assert.deepStrictEqual(struct.lookup('a')({a: 'hello'}), 'hello')
  */
 export const lookup =
