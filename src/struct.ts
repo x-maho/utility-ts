@@ -14,6 +14,6 @@
  *   assert.deepStrictEqual(struct.lookup('a')({a: 'hello'}), 'hello')
  */
 export const lookup =
-  <K extends string | number | symbol>(path: K) =>
-  <A>(obj: { [P in K]: A }): A =>
-    obj[path]
+  <K extends string | number | symbol>(k: K) =>
+  <A>(a: { [P in K]: A }): A =>
+    a[k]
