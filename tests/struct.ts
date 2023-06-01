@@ -5,7 +5,7 @@ describe('lookup struct', () => {
   it('lookup a property', () => {
     fc.assert(
       fc.property(fc.string(), (someword) => {
-        expect(structLib.lookup('a')({ a: someword })).toBe(someword)
+        expect(structLib.get('a')({ a: someword })).toBe(someword)
       })
     )
   })
