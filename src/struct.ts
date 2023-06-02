@@ -17,3 +17,18 @@ export const get =
   <K extends string | number | symbol>(k: K) =>
   <A>(a: { [P in K]: A }): A =>
     a[k]
+
+/**
+ * check if a property in an struct is not null or undefined
+ *
+ * @since 0.0.4
+ * @param k property name
+ */
+export const hasNonNullable =
+  <K extends string | number | symbol>(k: K) =>
+  <T extends { [P in K]?: unknown }>(
+    a: T
+  ): a is T & {
+    [P in K]: NonNullable<T[K]>
+  } =>
+    a[k] != null
